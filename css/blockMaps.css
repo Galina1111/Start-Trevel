@@ -1,0 +1,132 @@
+.maps .container {
+  background-color: #ffffff;
+  padding-bottom: 24px;
+  display: flex;
+}
+.maps .container div#map {
+  padding-left: 20px;
+}
+.maps .container .blockText .text h6{
+  font-family: MyriadPro-Regular;
+  font-size: 15px;
+  color: #000000bf;
+}
+.maps .container .blockText .text p{
+  font-size: 13px;
+  font-weight: 500;
+  color: #000000bf;
+}
+.maps .container .blockText {
+  width: 62%;
+  display: flex;
+  padding: 0 30px;
+}
+.maps .container .blockText .text{
+  padding: 0 15px;
+}
+.maps .container .blockText .text a{
+  font-style: italic;
+  color: #046888;
+  text-decoration: underline;
+}
+@media (min-width: 766px) and (max-width:991px) {
+  .maps .container {
+    display: block;
+  }
+  .maps .container div#map {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .maps .container div#map iframe {
+    width: 100%;
+  }
+  .maps .container .blockText {
+    width: 49%;
+    display: -webkit-inline-box;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+  }
+}
+@media (min-width: 576px) and (max-width:765px) {
+  .maps .container {
+    display: block;
+  }
+  .maps .container div#map {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .maps .container div#map iframe {
+    width: 100%;
+  }
+  .maps .container .blockText {
+    width: 49%;
+    display: -webkit-inline-box;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+  }
+}
+@media (min-width: 460px) and (max-width:575px) {
+  .maps .container {
+    display: block;
+    width: 96%;
+  }
+  .maps .container div#map {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .maps .container div#map iframe {
+    width: 100%;
+  }
+  .maps .container .blockText {
+    width: 49%;
+    display: -webkit-inline-box;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+  }
+}
+@media (min-width: 440px) and (max-width:459px) {
+  .maps .container {
+    display: block;
+    width: 96%
+  }
+  .maps .container div#map {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .maps .container div#map iframe {
+    width: 100%;
+  }
+  .maps .container .blockText {
+    width: 49%;
+    display: -webkit-inline-box;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+  }
+}
+@media (min-width: 320px) and (max-width:439px) {
+  .maps .container {
+    display: block;
+    width: 95%
+  }
+  .maps .container div#map {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .maps .container div#map iframe {
+    width: 100%;
+  }
+  .maps .container .blockText {
+    width: 49%;
+    display:contents;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+  }
+  .maps .container .blockText .text {
+    padding: 22px 15px 0 15px;
+  }
+}
