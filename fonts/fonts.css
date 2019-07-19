@@ -36,5 +36,11 @@
     src: url('Arial_Regular.ttf');
   }
 
-  
-  
+@font-face{
+  font-family: 'OpenSans-Light';
+  src: url('OpenSans-Light.ttf');
+}
+@font-face{
+  font-family: '﻿Calibri-Light';
+  src: url('calibrilight.png');
+}

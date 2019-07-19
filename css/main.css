@@ -17,7 +17,8 @@ body{
   margin: 0;
 }
 .container{
-  width: 980px;
+  width: 976px;
   padding-right: 0px !important;  
-  padding-left: 0px !important; 
+  padding-left: 0px !important;
+  margin: 0 auto;
 }

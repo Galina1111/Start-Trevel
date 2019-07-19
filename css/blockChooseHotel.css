@@ -53,7 +53,7 @@
 }
 .chooseHotel .container .chooseHotelStyle .chooseHoteTabs li.tab-link.active {
  background: linear-gradient(#e6e8ec, #e6e8ec);
- clip-rule: #5c5755;
+ /*clip-rule: #5c5755;*/
  color: #5c5755;
  font-size: 13px;
  border: 1px solid #c5c3c4;
@@ -68,7 +68,7 @@
 }
 .chooseHotel .container .chooseHotelStyle .chooseHoteTabs form .field label{
   font-size: 13px;
- color: #695d51;
+  color: #695d51;
 }
 .chooseHotel .container .chooseHotelStyle .chooseHoteTabs form .field  input[type="text"] {
   border-radius: 6px;
