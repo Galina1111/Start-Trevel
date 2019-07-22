@@ -7,7 +7,7 @@
   padding-left: 20px;
 }
 .maps .container #map iframe{
-  border: 2px solid #e7e8e8;
+  border: 4px solid #e7e8e8;
   border-radius: 5px;
   width: 355px;
   height: 280px;
