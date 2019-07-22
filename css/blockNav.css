@@ -205,6 +205,7 @@
     }
     .nav .container .navbar-collapse {
         background-color: #ffffff00;
+        margin-top: 0.5px;
     }
     .nav .container .navbar-collapse li:first-child {
         border-right: 0px solid #ebebeb;
@@ -237,6 +238,9 @@
         border-right: none;
         padding: 1.5px 0;
         width: auto;
+    }
+    .nav .container .navbar-collapse li.nav-item a{
+        text-decoration: underline;
     }
     .nav .container .navbar-collapse li.nav-item a.active {
         border-right: none;
@@ -286,6 +290,7 @@
     }
     .nav .container .navbar-collapse {
         background-color: #ffffff00;
+        margin-top: 0.5px;
     }
     .nav .container .navbar-collapse .nav-item {
         border-right: 1px solid #ebebeb;
@@ -319,6 +324,9 @@
     .nav .container .navbar-toggler:focus {
         outline: -webkit-focus-ring-color auto 0px;
     }
+    .nav .container .navbar-collapse li.nav-item a{
+        text-decoration: underline;
+    }
     .nav .container .bg-dark .justify-content-center .nav-item {
         border-right: 1px solid #2c241c;
         padding: 1.5px 0;
@@ -346,6 +354,7 @@
         font-size: 18px;
         color: rgba(255, 243, 216, 255);
         padding: 3px 0px;
+
     }
     .nav .container .img-link p:last-child {
         font-family: 'MyriadPro-Regular';
@@ -396,6 +405,7 @@
     }
     .nav .container .navbar-collapse li:first-child {
         border-right: 0px solid #ebebeb;
+        height: 28px;
     }
     .nav .container .mt-2,
     .nav .container .my-2 {
@@ -421,8 +431,12 @@
     .nav .container .btn-outline-success:focus {
         box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0);
     }
+    .nav .container .navbar-collapse li.nav-item{
+        height: 36px;
+    }
     .nav .container .navbar-collapse li.nav-item a.active {
         border-right: 0px solid #ebebeb;
+
     }
     .nav .container .navbar-collapse a:first-child {
         color: rgba(0, 0, 0, .9);
@@ -438,26 +452,38 @@
     }
     .nav .container .navbar-collapse {
         background-color: #ffffff00;
+        margin-top: 0.5px;
     }
     .nav .container .navbar-collapse .nav-item {
         border-right: 1px solid #ebebeb;
         height: 28px;
         padding: 0 0px 0 0px;
     }
+    .nav .container .navbar-collapse li.nav-item{
+        height: 36px;
+    }
     .nav .container .navbar-collapse li.nav-item a {
-        padding: 3px 30px;
+        padding: 8px 30px;
         font-family: 'MyriadPro-Regular';
         text-transform: uppercase;
         font-size: 14px;
         color: rgba(0,0,0,.7);
         text-align: center;
         font-weight: 600;
+        height: 36px;
     }
     .nav .container .navbar-collapse li.nav-item a.active {
         color: white;
         background-color: #3391be;
-        padding: 3px 29px;
-        border-right: 2px solid #ebebeb;
+        padding: 8px 29px;
+        border-right: 0px solid #ebebeb;
+
+    }
+    .nav .container .navbar-collapse a:first-child {
+        color: rgba(0, 0, 0, .9);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border: 0px solid transparent;
     }
     .nav .container .navbar-collapse .nav-item:hover{
         background-color: #d1d2d3;
@@ -476,6 +502,9 @@
     }
     .nav .container .navbar-toggler:focus {
         outline: -webkit-focus-ring-color auto 0px;
+    }
+    .nav .container .navbar-collapse li.nav-item a{
+        text-decoration: underline;
     }
     .nav .container .bg-dark .justify-content-center .nav-item {
         border-right: 1px solid #2c241c;
@@ -585,15 +614,6 @@
     .nav .container .btn-outline-success:focus {
         box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0);
     }
-    .nav .container .navbar-collapse li.nav-item a.active {
-        border-right: 0px solid #ebebeb;
-    }
-    .nav .container .navbar-collapse a:first-child {
-        color: rgba(0, 0, 0, .9);
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        border: 0px solid transparent;
-    }
 
     .nav .container .mb-2, .nav .container .my-2 {
         margin-bottom: .0rem!important;
@@ -606,6 +626,7 @@
     }
     .nav .container .navbar-collapse {
         background-color: #ffffff00;
+        margin-top: 0.5px;
     }
     .nav .container .navbar-collapse li.nav-item a {
         padding: 3px 30px;
@@ -619,8 +640,18 @@
     .nav .container .navbar-collapse li.nav-item a.active {
         color: white;
         background-color: #3391be;
-        padding: 3px 29px;
+        padding: 8px 29px;
         border-right: 2px solid #ebebeb;
+    }
+    .nav .container .navbar-collapse li.nav-item a {
+        padding: 8px 30px;
+        font-family: 'MyriadPro-Regular';
+        text-transform: uppercase;
+        font-size: 14px;
+        color: rgba(0,0,0,.7);
+        text-align: center;
+        font-weight: 600;
+        height: 36px;
     }
     .nav .container .navbar-collapse .nav-item:hover {
         background-color: #d1d2d3;
@@ -657,6 +688,9 @@
         height: auto;
         width: 100%;
         margin-top: -4px;
+    }
+    .nav .container .navbar-collapse li.nav-item{
+        height: 36px;
     }
     .nav .container .img-link {
         display: grid;
@@ -707,6 +741,9 @@
         padding: 0;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+    }
+    .nav .container .navbar-collapse li.nav-item a{
+        text-decoration: underline;
     }
     .nav .container .bg-dark .justify-content-center .nav-link {
         font-family: 'calibri';
