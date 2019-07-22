@@ -1,30 +1,35 @@
+
 .maps .container {
   background-color: #ffffff;
-  padding-bottom: 24px;
   display: flex;
 }
-.maps .container div#map {
+.maps .container #map {
   padding-left: 20px;
 }
-.maps .container .blockText .text h6{
-  font-family: MyriadPro-Regular;
-  font-size: 15px;
-  color: #000000bf;
+.maps .container #map iframe{
+  border: 2px solid #e7e8e8;
+  border-radius: 5px;
+  width: 355px;
+  height: 280px;
 }
-.maps .container .blockText .text p{
-  font-size: 13px;
-  font-weight: 500;
-  color: #000000bf;
-}
-.maps .container .blockText {
+.maps .container .info {
   width: 62%;
   display: flex;
   padding: 0 30px;
 }
-.maps .container .blockText .text{
+.maps .container .info .text{
   padding: 0 15px;
 }
-.maps .container .blockText .text a{
+.maps .container .info .text h6{
+  font-family: MyriadPro-Regular;
+  font-size: 18px;
+  color: rgba(44, 44, 44, 255);
+}
+.maps .container .info .text p{
+  font-family: MyriadPro-Regular;
+  font-size: 13px;
+}
+.maps .container .info .text a{
   font-style: italic;
   color: #046888;
   text-decoration: underline;
@@ -33,17 +38,18 @@
   .maps .container {
     display: block;
   }
-  .maps .container div#map {
+  .maps .container #map {
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
   }
-  .maps .container div#map iframe {
+  .maps .container #map iframe {
     width: 100%;
   }
-  .maps .container .blockText {
-    width: 49%;
-    display: -webkit-inline-box;
+  .maps .container .info {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    display: grid;
     margin: 0 auto;
     padding: 30px 0 0 0;
   }
@@ -52,17 +58,18 @@
   .maps .container {
     display: block;
   }
-  .maps .container div#map {
+  .maps .container #map {
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
   }
-  .maps .container div#map iframe {
+  .maps .container #map iframe {
     width: 100%;
   }
-  .maps .container .blockText {
-    width: 49%;
-    display: -webkit-inline-box;
+  .maps .container .info {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    display: grid;
     margin: 0 auto;
     padding: 30px 0 0 0;
   }
@@ -72,17 +79,18 @@
     display: block;
     width: 96%;
   }
-  .maps .container div#map {
+  .maps .container #map {
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
   }
-  .maps .container div#map iframe {
+  .maps .container #map iframe {
     width: 100%;
   }
-  .maps .container .blockText {
-    width: 49%;
-    display: -webkit-inline-box;
+  .maps .container .info {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    display: grid;
     margin: 0 auto;
     padding: 30px 0 0 0;
   }
@@ -92,17 +100,18 @@
     display: block;
     width: 96%
   }
-  .maps .container div#map {
+  .maps .container #map {
     width: 100%;
     padding: 0 10px;
     margin: 0 auto;
   }
-  .maps .container div#map iframe {
+  .maps .container #map iframe {
     width: 100%;
   }
-  .maps .container .blockText {
-    width: 49%;
-    display: -webkit-inline-box;
+  .maps .container .info {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    display: grid;
     margin: 0 auto;
     padding: 30px 0 0 0;
   }
@@ -112,21 +121,21 @@
     display: block;
     width: 95%
   }
-  .maps .container div#map {
+  .maps .container #map {
     width: 100%;
     padding: 0 10px;
     margin: 0 auto;
   }
-  .maps .container div#map iframe {
+  .maps .container #map iframe {
     width: 100%;
   }
-  .maps .container .blockText {
+  .maps .container .info {
     width: 49%;
-    display:contents;
+    display: contents;
     margin: 0 auto;
     padding: 30px 0 0 0;
   }
-  .maps .container .blockText .text {
+  .maps .container .info .text {
     padding: 22px 15px 0 15px;
   }
 }

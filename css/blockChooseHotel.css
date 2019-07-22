@@ -170,11 +170,11 @@
     left: auto;
 }
 .choose-hotel .container .choose-hotel-style .box {
-    display: flex;
     padding: 10px;
-    width: 586px;
+    width: 62%;
     float: left;
-    padding: 10px 36px;
+    display: grid;
+    grid-template-columns: 50% 50%;
     text-align: center;
     border-left: 1px solid #dcdcdc;
 }
@@ -188,6 +188,7 @@
     text-align: left;
     font-size: 13px;
     font-weight: 500;
+    padding: 0 25px;
 }
 .choose-hotel .container .choose-hotel-style .box figure img {
     border: 1px solid #d2d3d5;
@@ -203,13 +204,22 @@
     font-size: 11px;
 }
 .choose-hotel .container .choose-hotel-style .box figure {
-    margin: 15px 6px 15px 0px;
+    margin: 15px 0px;
     display: block;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .choose-hotel .container .choose-hotel-style {
         display: flow-root;
+    }
+    .choose-hotel .container .choose-hotel-style .box {
+        padding: 10px;
+        width: 62%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        text-align: center;
+        border-left: 1px solid #dcdcdc;
     }
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
         border-right: none;
@@ -259,7 +269,7 @@
         margin-top: 2px;
     }
 }
-@media (min-width: 576px) and (max-width: 765px) {
+@media (min-width: 576px) and (max-width: 768px) {
     .choose-hotel .container .choose-hotel-style {
         display: flow-root;
     }
@@ -286,7 +296,7 @@
     }
     .choose-hotel .container .choose-hotel-style .box figcaption {
         width: 100% !important;
-        padding: 6px 0 0 0 !important;
+        padding: 0 10px!important;
     }
     .choose-hotel .container .choose-hotel-style .fieldDate {
         display: inline-grid !important;
@@ -302,45 +312,7 @@
         font-size: 11px;
     }
 }
-@media (min-width: 576px) and (max-width: 764px) {
-    .choose-hotel .container .choose-hotel-style {
-        display: inline-block;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
-        border-right: none;
-        margin: 0 auto;
-        width: 390px;
-        padding: 0 16px 35px 16px;
-    }
-    .choose-hotel .container .choose-hotel-style .box {
-        width: 100%;
-        padding: 10px 12px;
-    }
-    .choose-hotel .container .choose-hotel-style .box figcaption {
-        width: 91%;
-        padding: 6px 0px 0 0px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 126px;
-        font-size: 11px;
-    }
-}
-@media (min-width: 481px) and (max-width: 575px) {
+@media (min-width: 481px) and (max-width: 576px) {
     .choose-hotel .container {
         width: 96%;
     }
@@ -367,6 +339,7 @@
     .choose-hotel .container .choose-hotel-style .box figcaption {
         width: 100%;
         padding: 6px 0px 0 0px;
+        text-align: center;
     }
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
@@ -878,4 +851,3 @@
         padding: 5px 17px;
     }
 }
-
