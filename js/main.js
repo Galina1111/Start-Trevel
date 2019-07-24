@@ -7,7 +7,6 @@ jQuery(function ($) {
     // $(".datepicker").datepicker();
 
 
-
     $('ul.tabs li').click(function () {
         var tab_id = $(this).attr('data-tab');
 
@@ -20,28 +19,27 @@ jQuery(function ($) {
 
 
     $("#to").datepicker({
-        firstDay:2,
+        firstDay: 2,
         showButtonPanel: true,
         currentDay: "Today",
         closeText: "Close",
     });
     $("#from").datepicker({
-        firstDay:2,
+        firstDay: 2,
         showButtonPanel: true,
         currentDay: "Today",
         closeText: "Close",
 
     });
 
-    $(".navbar-nav a").click(function(event) {
-        $(".navbar-nav a").removeClass("active");
-        $(this).addClass("active");
-        // $('.navbar-toggler').toggle()
-        // $('.navbar-toggler').toggle()
+    $("#navbarSupportedContent a.nav-link").click(function () {
+        $(this).parents("ul").find("li.active").removeClass("active");
+        $(this).parent().addClass("active");
+        $('#navbarSupportedContent').collapse('hide');
     });
 
-    $(".navbar li").click(function(event) {
-        $(".navbar li").removeClass("active");
-        $(this).addClass("active");
+    $(".nav a.nav-link").click(function () {
+        $(this).parents("ul").find("li.active").removeClass("active");
+        $(this).parent().addClass("active");
     });
 });

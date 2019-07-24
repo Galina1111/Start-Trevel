@@ -12,7 +12,7 @@
     border-right: 1px solid #ebebeb;
     height: 40px;
 }
-.nav .container .navbar-collapse .nav-item {
+.nav .container .navbar-collapse li.nav-item {
     border-right: 1px solid #ebebeb;
     height: 40px;
     padding: 0 0px;
@@ -21,17 +21,9 @@
     color: rgba(0,0,0,.7);
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    border: 2px solid transparent;
     padding: 10px 29px;
 }
-.nav .container .navbar-collapse li.nav-item a.active{
-    color: white;
-    background-color: #3391be;
-    padding: 10px 29px;
-    height: 40px;
-    border-right: 2px solid #ebebeb
-}
-.nav .container .navbar-collapse .nav-item a{
+.nav .container .navbar-collapse li.nav-item a{
     padding: 10px 29px;
     font-family: 'MyriadPro-Regular';
     text-transform: uppercase;
@@ -40,9 +32,14 @@
     text-align: center;
     font-weight: 600;
 }
-.nav .container .navbar-collapse link:hover {
-    color: rgba(0,0,0,.7);
+.nav .container .navbar-collapse li.nav-item:hover a {
+    color: rgba(65, 136, 232, 0.7);
 }
+.nav .container .navbar-collapse li.nav-item.active a{
+    color: white;
+    background-color: #3391be;
+}
+
 /*serch*/
 .nav .container .form-inline .form-control {
     display: inline-block;
@@ -263,7 +260,6 @@
         background-color: #fafafa;
         width: 40%;
     }
-    .nav .container .mt-2,
     .nav .container .my-2 {
         margin-top: .0rem !important;
     }
@@ -276,9 +272,8 @@
         padding: 2px 3px;
     }
     .nav .container .btn-outline-success:hover {
-        border: 1px solid #ced4da !important;
+        border: 1px solid #ced4da;
     }
-    .nav .container .btn-outline-success.focus,
     .nav .container .btn-outline-success:focus {
         box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0);
     }
@@ -323,13 +318,11 @@
     .nav .container .navbar-collapse li:first-child {
         border-right: 0px solid #ebebeb;
     }
-    .nav .container .mr-auto,
     .nav .container .mx-auto {
         margin-right: auto !important;
         width: 55%;
         background-color: white;
     }
-    .nav .container .mt-2,
     .nav .container .my-2 {
         margin-top: .0rem !important;
         margin-bottom: .0rem!important;
@@ -340,16 +333,7 @@
         width: 55%
     }
     .nav .container button.btn.btn-outline-success.my-2.my-sm-0 {
-        width: 17%;
         margin: 0px 0px 0 7px;
-        padding: 2px 3px;
-    }
-    .nav .container .btn-outline-success:hover {
-        border: 1px solid #ced4da !important;
-    }
-    .nav .container .btn-outline-success.focus,
-    .nav .container .btn-outline-success:focus {
-        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0);
     }
     .nav .container .navbar-toggler:focus {
         outline: -webkit-focus-ring-color auto 0px;
