@@ -38,12 +38,12 @@
     display: none;
     background-color: #e6e8ecad;
     padding: 15px;
-    height: 190px;
+    /*height: 190px;*/
 
 }
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .tab-content.active {
     display: inherit;
-    padding: 7px 5px 0 5px;
+    /*padding: 7px 5px 0 5px;*/
 }
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
     width: 375px;
@@ -59,8 +59,8 @@
     border: 1px solid #c5c3c4;
 }
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form {
-    margin: 0 0 0 -5px;
-    padding-left: 10px;
+    /*margin: 0 0 0 -5px;*/
+    /*padding-left: 10px;*/
     padding-bottom: 30px;
 }
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field {
@@ -79,9 +79,9 @@
     border-top: 1px solid #b0b1b1;
 }
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field input[type="text"]::placeholder {
-    color: #0c0c0b;
-    font-size: 10.8px;
-}
+     color: #0c0c0b;
+     font-size: 10.8px;
+ }
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field input[type="date"] {
     border-radius: 6px;
     padding: 0 0 0 5px;
@@ -112,13 +112,13 @@
 .choose-hotel .container .choose-hotel-style img.calendar {
     position: absolute;
     top: 72px;
-    right: 115px;
+    right: 109px;
     width: 10px;
 }
 .choose-hotel .container .choose-hotel-style img.calendar1 {
     position: absolute;
     top: 72px;
-    right: 32px;
+    right: 23px;
     width: 10px;
 }
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field span {
@@ -141,7 +141,7 @@
     border-radius: 6px;
     position: absolute;
     top: 133px;
-    right: 48px;
+    right: 28px;
     color: #f1f8f2;
     background: linear-gradient(#3aa857, #62cb7d);
     border: 1px solid #3b9753;
@@ -198,8 +198,8 @@
     color: #046888;
     text-decoration: underline;
 }
-.choose-hotel .container .choose-hotel-style input#to,
-.choose-hotel .container .choose-hotel-style input#from {
+.choose-hotel .container .choose-hotel-style #to,
+.choose-hotel .container .choose-hotel-style #from {
     font-size: 11px;
 }
 .choose-hotel .container .choose-hotel-style .box figure {
@@ -207,648 +207,300 @@
     display: block;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px){
     .choose-hotel .container .choose-hotel-style {
-        display: flow-root;
+        display: inline-block;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
+        width: 100%;
+        padding: 0 16px 20px 16px;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field {
+        display: inline-grid;
+        margin-right: 2px;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs input[type="text"]:first-of-type {
+        width:97%;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from {
+        width: 96%;
+    }
+    .choose-hotel .container .choose-hotel-style img.calendar {
+        position: absolute;
+        top: 72px;
+        right: 53.5%;
+        width: 10px;
+    }
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
+        position: absolute;
+        top: 72px;
+        right: 33.7%;
+        width: 10px;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
+        position: absolute;
+        top: 113px;
+        right: 28px;
     }
     .choose-hotel .container .choose-hotel-style .box {
         padding: 10px;
-        width: 62%;
-        display: grid;
-        grid-template-columns: 45% 45%;
-        justify-content: center;
-        text-align: center;
-        border-left: 1px solid #dcdcdc;
+        width: 100%;
     }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
-        border-right: none;
-        margin: 0 auto;
-        width: 100%; /*390px;*/
-        padding: 0 16px 35px 16px;
+    .choose-hotel .container .field:nth-of-type(1){
+        width: 27%;
+    }
+    .choose-hotel .container .field:nth-of-type(2),
+    .choose-hotel .container .field:nth-of-type(3){
+        width: 20%;
+    }
+}
+@media screen and (max-width: 767px){
+    .choose-hotel .container .field:nth-of-type(1) {
+        width: 42%;
+    }
+    .choose-hotel .container .field:nth-of-type(2), .choose-hotel .container .field:nth-of-type(3) {
+        width: 25%;
     }
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field {
-        padding: 0 8px;
+        display: inline-grid;
+        justify-items: center;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form {
+        padding-bottom: 0px;
     }
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from {
-        width: 100px;
-    }
-    .choose-hotel .container .choose-hotel-style div#ui-datepicker-div {
-        position: absolute;
-        top: 739.625px;
-        left: 5% !important;
-        z-index: 1;
-        width: 42em !important;
+        width: 90%;
     }
     .choose-hotel .container .choose-hotel-style img.calendar {
         position: absolute;
-        top: 70px;
-        left: 39%;
+        top: 71px;
+        right: 35%;
+        width: 12px;
     }
     .choose-hotel .container .choose-hotel-style img.calendar1 {
         position: absolute;
-        top: 69px;
-        right: 41.5% !important;
+        top: 71px;
+        right: 10.5%;
+        width: 12px;
     }
-    .choose-hotel .container .choose-hotel-style .box {
-        width: 100%;
+    .choose-hotel .container .choose-hotel-style .field.hasel {
+        margin-top: 20px;
+        padding-right: 15px;
     }
-    .choose-hotel .container .choose-hotel-style .box figcaption {
-        width: 91%;
-        padding: 0 0px 0 40px;
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
+        position: absolute;
+        top: 73.2%;
+        right: 15%;
     }
-    .choose-hotel .container .choose-hotel-style select {
-        word-wrap: normal;
-        width: 58px;
-        font-size: 11px;
-        color: black;
-        font-weight: 500;
-        text-transform: none;
-        border: 1px solid #abadb3;
-        margin-top: 2px;
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
+        position: absolute;
+        top: 73.2%;
+        right: 9%;
     }
 }
-@media (min-width: 576px) and (max-width: 768px) {
-    .choose-hotel .container .choose-hotel-style {
-        display: flow-root;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
-        border-right: none;
-        margin: 0 auto;
-        width: 100% !important;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field {
-        padding: 0 8px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field input[type="text"] {
-        width: 203px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .box {
-        width: 100%;
-        padding: 10px 12px;
-    }
-    .choose-hotel .container .choose-hotel-style .box figcaption {
-        width: 100% !important;
-        padding: 0 10px!important;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 126px;
-        font-size: 11px;
-    }
-}
-@media (min-width: 481px) and (max-width: 576px) {
+@media screen and (max-width: 575px){
     .choose-hotel .container {
         width: 96%;
     }
-    .choose-hotel .container .choose-hotel-style {
-        display: inline-block;
-        margin: 0 0 0 10px;
-        width: 93.9%;
+    .choose-hotel .container .field:nth-of-type(2),
+    .choose-hotel .container .field:nth-of-type(3) {
+        width: 26.3%;
     }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
-        border-right: none;
-        margin: 0 auto;
-        width: 390px;
-        padding: 0 16px 35px 16px;
-    }
-    .choose-hotel .container .choose-hotel-style .box {
-        width: 100%;
-        padding: 10px 12px;
-        display: block;
-    }
-    .choose-hotel .container .choose-hotel-style .box figure {
-        padding: 10px 10px 20px;
-        margin: 0 auto;
-    }
-    .choose-hotel .container .choose-hotel-style .box figcaption {
-        width: 100%;
-        padding: 6px 0px 0 0px;
-        text-align: center;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 49%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        height: auto;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 144px;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        position: absolute;
-        top: 196px;
-    }
-}
-@media (min-width: 470px) and (max-width: 481px) {
-    .choose-hotel .container {
-        width: 96% !important;
-        /* padding-right: 15px !important;
-        padding-left: 15px !important; */
-    }
-    .choose-hotel .container .choose-hotel-style {
-        display: inline-block;
-        margin: 0 0 0 10px;
-        width: 93.9%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
-        border-right: none;
-        margin: 0 auto;
-        width: 100%;
-        padding: 0 16px 35px 16px;
-    }
-    .choose-hotel .container .choose-hotel-style .box {
-        width: 100%;
-        padding: 10px 12px;
-        display: block;
-    }
-    .choose-hotel .container .choose-hotel-style .box figure {
-        padding: 10px 10px 20px;
-        margin: 0 auto;
-    }
-    .choose-hotel .container .choose-hotel-style .box figcaption {
-        width: 100%;
-        padding: 6px 0px 0 0px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 49%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        height: auto;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 144px;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        position: absolute;
-        top: 196px;
-    }
-}
-
-@media (min-width: 440px) and (max-width: 470px) {
-    .choose-hotel .container {
-        width: 96% !important;
-    }
-    .choose-hotel .container .choose-hotel-style {
-        display: inline-block;
-        margin: 0 0 0 10px;
-        width: 93.9%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
-        border-right: none;
-        margin: 0 auto;
-        width: 100%;
-        padding: 0 16px 35px 16px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        font-size: 13px;
-        width: 96px;
-        height: 26px;
-        border-radius: 6px;
-        position: absolute;
-        top: 193px;
-        right: 15px;
-    }
-    .choose-hotel .container .choose-hotel-style .box {
-        width: 100%;
-        padding: 10px 12px;
-        display: block;
-    }
-    .choose-hotel .container .choose-hotel-style .box figure {
-        padding: 10px 10px 20px;
-        margin: 0 auto;
-    }
-    .choose-hotel .container .choose-hotel-style .box figcaption {
-        width: 100%;
-        padding: 6px 0px 0px;
+    .choose-hotel .container .field:nth-of-type(1) {
+        width: 40%;
     }
     .choose-hotel .container .choose-hotel-style img.calendar {
         position: absolute;
-        top: 147px;
-        right: 60%;
+        top: 71px;
+        right: 36%;
+        width: 12px;
     }
     .choose-hotel .container .choose-hotel-style img.calendar1 {
         position: absolute;
-        top: 147px;
-        right: 11%;
+        top: 71px;
+        right: 10%;
+        width: 12px;
     }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:first-of-type {
-        display: inline-grid;
-        width: 100%;
+    .choose-hotel .container .choose-hotel-style .box {
+        display: grid;
+        grid-template-columns: none;
     }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        position: relative;
-        padding-top: 32px;
-        height: auto;
-        height: auto;
+}
+@media screen and (max-width: 560px){
+    .choose-hotel .container .choose-hotel-style img.calendar {
+        position: absolute;
+        top: 71px;
+        right: 36.5%;
+        width: 12px;
     }
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
+        position: absolute;
+        top: 71px;
+        right: 10.2%;
+        width: 12px;
+    }
+}
+@media screen and (max-width: 540px){
+    .choose-hotel .container .field:nth-of-type(2),
+    .choose-hotel .container .field:nth-of-type(3) {
+        width: 29.3%;
+    }
+    .choose-hotel .container .field:nth-of-type(1) {
+        width: 36%;
+    }
+    .choose-hotel .container .choose-hotel-style img.calendar {
+        position: absolute;
+        top: 71px;
+        right: 37.5%;
+        width: 12px;
+    }
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
+        position: absolute;
+        top: 71px;
+        right: 9.2%;
+        width: 12px;
+    }
+}
+@media screen and (max-width: 520px){
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
+        position: absolute;
+        top: 71px;
+        right: 8.2%;
+        width: 12px;
+    }
+}
+@media screen and (max-width: 511px){
+    .choose-hotel .container .choose-hotel-style img.calendar {
+        position: absolute;
+        top: 71px;
+        right: 37%;
+        width: 12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
+        position: absolute;
+        top: 71px;
+        right: 7.2%;
+        width: 12px;
+    }
+}
+@media screen and (max-width: 498px){
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from {
+        width: 90%;
     }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 49%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 144px;
-        font-size: 11px;
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
+        position: absolute;
+        top: 71px;
+        right: 11.3%;
+        width: 12px;
     }
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
         position: absolute;
-        top: 195px;
-        right: 26px;
+        top: 73.2%;
+        right: 12%;
+    }
+    .choose-hotel .container .choose-hotel-style img.calendar {
+        position: absolute;
+        top: 71px;
+        right: 39%;
+        width: 12px;
+    }
+    .choose-hotel .container .field:nth-of-type(2),
+    .choose-hotel .container .field:nth-of-type(3){
+        width: 28%;
     }
 }
-@media (min-width: 320px) and (max-width: 440px) {
-    .choose-hotel .container {
-        width: 95%;
+@media screen and (max-width: 470px){
+    .choose-hotel .container .choose-hotel-style img.calendar {
+        position: absolute;
+        top: 71px;
+        right: 38.5%;
+        width: 12px;
     }
-    .choose-hotel .container .choose-hotel-style {
-        display: inline-block;
+}
+@media screen and (max-width: 450px){
+    .choose-hotel .container .choose-hotel-style .field.hasel {
+         padding-right: 0px;
     }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs {
-        border-right: none;
-        margin: 0 auto;
+}
+@media screen and (max-width: 415px){
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
+        position: absolute;
+        top: 73.2%;
+        right: 10%;
+    }
+}
+@media screen and (max-width: 400px){
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
+        padding-bottom: 75px;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form {
+        padding: 0 22px;
+    }
+    .choose-hotel .container .field:nth-of-type(1),
+    .choose-hotel .container .field:nth-of-type(2),
+    .choose-hotel .container .field:nth-of-type(3){
         width: 100%;
-        padding: 0 16px 35px 16px;
     }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .tab-content {
-        height: 300px;
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from {
+        width: 100%;
+    }
+    .choose-hotel .container .choose-hotel-style img.calendar {
+        position: absolute;
+        top: 145px;
+        right: 13.5%;
+        width: 13px;
+    }
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
+        position: absolute;
+        top: 206px;
+        right: 14%;
+        width: 13px;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field input[type="text"]::placeholder {
+        color: #0c0c0b;
+        font-size: 13px;
     }
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        top: 250px;
+        position: absolute;
+        top: 88.2%;
         right: 38%;
     }
-    .choose-hotel .container .choose-hotel-style .box {
-        width: 100%;
-        padding: 10px 12px;
-        display: block;
-    }
-    .choose-hotel .container .choose-hotel-style .box figure {
-        margin: 0 0px 0 0px;
-        padding: 24px 0px;
-        /* width: 200px; */
-        margin: 0 auto;
-    }
-    .choose-hotel .container .choose-hotel-style .box figcaption {
-        width: 100%;
-        padding: 6px 0px 0 0px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(3) {
-        width: 49%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from {
-        width: 115px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs span {
-        margin: 1px 0 0 10px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs ul.tabs li {
-        padding: 5px 19px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 126px;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        position: absolute;
-        top: 222px;
-        right: 26px;
-    }
-}
 
-@media (min-width: 431px) and (max-width: 439px) {
-    .choose-hotel .container {
-        width: 96%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 49%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        height: auto;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 144px;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        position: absolute;
-        top: 195px;
-        right: 26px;
-    }
+
+
 }
-@media (min-width: 412px) and (max-width: 430px) {
-    .choose-hotel .container {
-        width: 96%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 49%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        height: auto;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 144px;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
+@media screen and (max-width: 350px) {
+    .choose-hotel .container .choose-hotel-style img.calendar {
         position: absolute;
-        top: 195px;
-        right: 26px;
+        top: 145px;
+        right: 15.5%;
+        width: 13px;
     }
-}
-@media (min-width: 400px) and (max-width: 411px) {
-    .choose-hotel .container {
-        width: 95%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 49%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        height: auto;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 144px;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
+    .choose-hotel .container .choose-hotel-style img.calendar1 {
         position: absolute;
-        top: 195px;
-        right: 26px;
-    }
-}
-@media (min-width: 335px) and (max-width: 400px) {
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field {
-        display: inline-grid;
-        margin-top: 10px;
-        align-self: baseline;
-        padding: 0px 0px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form{
-        width: 70% !important;
-        padding-left: 0px !important;
-        padding-bottom: 60px !important;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .hasel {
-        display: initial;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .hasel #rom{
-        margin-left: 14px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .hasel #adults{
-        margin-left: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field input[type="text"] {
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 100% !important;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        height: auto;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 100% !important;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        position: absolute;
-        top: 89%;
-        right: 36%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form {
-        margin: 0 0 0 -5px;
-        padding-left: 10px;
-        display: flex;
-        padding-bottom: 30px;
-        width: 80%;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-}
-@media (min-width: 320px) and (max-width: 335px) {
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #to,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #from,
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(2),
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .field:nth-of-type(3) {
-        display: none;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field:nth-of-type(1) {
-        display: inline-grid;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field {
-        display: inline-grid;
-        margin-top: 10px;
-        align-self: baseline;
-        padding: 0px 0px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form{
-        width: 70% !important;
-        padding-left: 0px !important;
-        padding-bottom: 60px !important;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .hasel {
-        display: initial;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .hasel #rom{
-        margin-left: 14px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs .hasel #adults{
-        margin-left: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field input[type="text"] {
-        width: 100%;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate {
-        display: inline-grid !important;
-        width: 100% !important;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs #tab-1 {
-        height: auto;
-    }
-    .choose-hotel .container .choose-hotel-style .fieldDate input[type=date] {
-        border-radius: 6px;
-        padding: 0 0 0 5px;
-        height: 30px;
-        background-color: #d1d2d3;
-        border: 1px solid #b0b1b147;
-        border-top: 1px solid #b0b1b1;
-        width: 100% !important;
-        font-size: 11px;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
-        position: absolute;
-        top: 89%;
-        right: 36%;
-    }
-    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form {
-        margin: 0 0 0 -5px;
-        padding-left: 10px;
-        display: flex;
-        padding-bottom: 30px;
-        width: 90% !important;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 auto;
+        top: 206px;
+        right: 15%;
+        width: 13px;
     }
     .choose-hotel .container .choose-hotel-style .choose-hotel-tabs ul.tabs li {
         padding: 5px 17px;
+    }
+    .choose-hotel .container .choose-hotel-style .field.hasel {
+        width: 100%;
+    }
+    .choose-hotel .container .choose-hotel-style select {
+        width: 40%;
+        height: 23px;
+    }
+    .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form button {
+        position: absolute;
+        top: 90.2%;
+        right: 32%;
     }
 }

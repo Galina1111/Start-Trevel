@@ -34,7 +34,8 @@
   color: #046888;
   text-decoration: underline;
 }
-@media (min-width: 766px) and (max-width:991px) {
+
+@media screen and (max-width: 991px){
   .maps .container {
     display: block;
   }
@@ -54,88 +55,16 @@
     padding: 30px 0 0 0;
   }
 }
-@media (min-width: 576px) and (max-width:765px) {
+@media screen and (max-width: 576px){
   .maps .container {
-    display: block;
-  }
-  .maps .container #map {
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-  .maps .container #map iframe {
-    width: 100%;
-  }
-  .maps .container .info {
-    width: 100%;
-    grid-template-columns: 50% 50%;
-    display: grid;
-    margin: 0 auto;
-    padding: 30px 0 0 0;
-  }
-}
-@media (min-width: 460px) and (max-width:575px) {
-  .maps .container {
-    display: block;
     width: 96%;
   }
   .maps .container #map {
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-  .maps .container #map iframe {
-    width: 100%;
-  }
-  .maps .container .info {
-    width: 100%;
-    grid-template-columns: 50% 50%;
-    display: grid;
-    margin: 0 auto;
-    padding: 30px 0 0 0;
+    padding: 0 10px;
   }
 }
-@media (min-width: 440px) and (max-width:459px) {
-  .maps .container {
-    display: block;
-    width: 96%
-  }
-  .maps .container #map {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-  .maps .container #map iframe {
-    width: 100%;
-  }
+@media screen and (max-width: 500px){
   .maps .container .info {
-    width: 100%;
-    grid-template-columns: 50% 50%;
-    display: grid;
-    margin: 0 auto;
-    padding: 30px 0 0 0;
-  }
-}
-@media (min-width: 320px) and (max-width:439px) {
-  .maps .container {
-    display: block;
-    width: 95%
-  }
-  .maps .container #map {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-  .maps .container #map iframe {
-    width: 100%;
-  }
-  .maps .container .info {
-    width: 49%;
-    display: contents;
-    margin: 0 auto;
-    padding: 30px 0 0 0;
-  }
-  .maps .container .info .text {
-    padding: 22px 15px 0 15px;
+    display: inline-block;
   }
 }

@@ -4,7 +4,7 @@ jQuery(function ($) {
         captions: true,
         adaptiveHeight: true
     });
-    $(".datepicker").datepicker();
+    // $(".datepicker").datepicker();
 
 
 
@@ -19,43 +19,29 @@ jQuery(function ($) {
     })
 
 
-    var dateFormat = "mm/dd/yy",
-      from = $( "#from" )
-        .datepicker({
-          defaultDate: "+1w",
-          changeMonth: true,
-          numberOfMonths: 3
-        })
-        .on( "change", function() {
-          to.datepicker( "option", "minDate", getDate( this ) );
-        }),
-      to = $( "#to" ).datepicker({
-        defaultDate: "+1w",
-        changeMonth: true,
-        numberOfMonths: 3
-      })
-      .on( "change", function() {
-        from.datepicker( "option", "maxDate", getDate( this ) );
-      });
- 
-    function getDate( element ) {
-      var date;
-      try {
-        date = $.datepicker.parseDate( dateFormat, element.value );
-      } catch( error ) {
-        date = null;
-      }
- 
-      return date;
-    }
+    $("#to").datepicker({
+        firstDay:2,
+        showButtonPanel: true,
+        currentDay: "Today",
+        closeText: "Close",
+    });
+    $("#from").datepicker({
+        firstDay:2,
+        showButtonPanel: true,
+        currentDay: "Today",
+        closeText: "Close",
 
-    $(".nav-item").click(function(event) {
-        $(".nav-item ").removeClass("active");
-        $(this).addClass("active");
     });
 
-    $(".nav-item a").click(function(event) {
-        $(".nav-item a").removeClass("active");
+    $(".navbar-nav a").click(function(event) {
+        $(".navbar-nav a").removeClass("active");
+        $(this).addClass("active");
+        // $('.navbar-toggler').toggle()
+        // $('.navbar-toggler').toggle()
+    });
+
+    $(".navbar li").click(function(event) {
+        $(".navbar li").removeClass("active");
         $(this).addClass("active");
     });
 });
