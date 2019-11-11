@@ -22,3 +22,6 @@ body{
   padding-left: 0px !important;
   margin: 0 auto;
 }
+iframe{
+  border: none;
+}

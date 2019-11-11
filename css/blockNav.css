@@ -111,14 +111,14 @@
     text-align: center;
     background-color: #0000004f;
 }
-.nav .container .img-link p:first-child{
+.nav .container .img-link h2{
     font-family: 'MyriadPro-Regular';
     margin: 0 0 0rem 0px;
     font-size: 30px;
     color: rgba(255, 243, 216, 255);
     padding: 3px 0px;
 }
-.nav .container .img-link p:last-child{
+.nav .container .img-link p{
     font-family: 'MyriadPro-Regular';
     font-size: 18px;
     color: rgba(202, 186, 151, 255);

@@ -73,6 +73,7 @@
     font-size: 13px;
     color: #695d51;
 }
+
 .choose-hotel .container .choose-hotel-style .choose-hotel-tabs form .field input[type="text"] {
     border-radius: 6px;
     padding: 0 0 0 5px;
@@ -129,6 +130,7 @@
     font-weight: 500;
     color: #aaadaf;
 }
+
 .choose-hotel .container .choose-hotel-style select {
     word-wrap: normal;
     width: 58px;
